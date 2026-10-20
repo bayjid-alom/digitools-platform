@@ -2,7 +2,7 @@ import { Check } from 'lucide-react';
 import React, { use } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 
-const Products = ({ productsPromise }) => {
+const Products = ({ productsPromise, carts, setCarts }) => {
     const products = use(productsPromise)
     // console.log(products);  // [{...}, {...}]
 
@@ -13,7 +13,11 @@ const Products = ({ productsPromise }) => {
             <div className="products-card-container mx-auto grid w-11/12 max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
                 {
                     products.map(product => {
-                        return <ProductCard key={product.id} product={product}></ProductCard>
+                        return <ProductCard key={product.id}
+                            product={product}
+                            carts={carts}
+                            setCarts={setCarts}
+                        ></ProductCard>
                     })
                 }
             </div>

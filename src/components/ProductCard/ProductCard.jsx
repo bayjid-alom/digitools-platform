@@ -1,9 +1,16 @@
 import { Check } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, carts, setCarts }) => {
     const { name, description, price, period, tag, tagType, features, icon, alt } = product;
 
+    const [isBought, setIsBought] = useState(false);
+
+    const handleBuyNow = (product) => {
+        setIsBought(true)
+        setCarts([...carts, product])
+    }
 
     return (
         <div className="mx-auto hover:-translate-y-2 transition-all duration-300 ease-in-out relative w-full max-w-[320px] rounded-2xl border border-gray-200 bg-white p-5 shadow-sm  hover:shadow-md">
@@ -55,8 +62,17 @@ const ProductCard = ({ product }) => {
             </div>
 
             {/* Buy button */}
-            <button className="mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] py-3 text-xs font-semibold text-white transition-opacity hover:opacity-90">
-                Buy Now
+            <button
+                onClick={() => handleBuyNow(product)}
+                className={`mt-3 flex w-full items-center justify-center gap-2 rounded-full 
+                ${isBought === false ? " text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] transition-opacity hover:opacity-90" : "bg-green-600 text-white"} py-3 text-xs font-semibold `}>
+
+                {
+                    isBought ? <>
+                        <Check size={16}></Check>
+                        Added to Cart
+                    </> : "Buy Now"
+                }
             </button>
 
         </div>
