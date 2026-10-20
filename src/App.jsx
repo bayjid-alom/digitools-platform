@@ -1,9 +1,11 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
 import UserStats from './components/UserStats/UserStats'
 import Products from './components/Products/Products'
+import { ToastContainer } from 'react-toastify'
+import Cart from './components/Cart/Cart'
 
 
 const fetchProducts = async () => {
@@ -13,6 +15,9 @@ const fetchProducts = async () => {
 
 function App() {
   const productsPromise = fetchProducts()
+  const [activeTabs, setActiveTabs] = useState("products")
+
+
 
 
   return (
@@ -34,11 +39,21 @@ function App() {
 
       {/* Products section tabs */}
       <div className="tabs-container mx-auto mb-10 flex w-11/12 max-w-[320px] items-center gap-2 rounded-full border border-gray-200 bg-white p-1.5 ">
-        <button className="flex-1 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors">
+
+        <button
+          onClick={() => setActiveTabs("products")}
+          className={`flex-1 rounded-full  ${activeTabs === "products"
+            ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] transition-colors text-white"
+            : "bg-white text-black"}  px-4 py-2.5 text-sm font-semibold  shadow-sm `}>
           Products
         </button>
 
-        <button className="flex-1 rounded-full px-4 py-2.5 text-sm font-semibold text-gray-600 transition-colors hover:bg-gray-100">
+        <button
+          onClick={() => setActiveTabs("cart")}
+          className={`flex-1 rounded-full px-4 py-2.5 text-sm font-semibold
+          ${activeTabs === "cart"
+              ? "bg-linear-to-r from-[#4F39F6]  to-[#9514FA] transition-colors text-white"
+              : "bg-white text-black"}`}>
           Cart
         </button>
       </div>
@@ -51,7 +66,13 @@ function App() {
         <span className="loading loading-dots loading-xl"></span>
       </div>}
       >
-        <Products productsPromise={productsPromise}></Products>
+        {
+          activeTabs === "products" && <Products productsPromise={productsPromise}></Products>
+        }
+
+        {
+          activeTabs === "cart" && <Cart></Cart>
+        }
       </Suspense>
 
 
@@ -60,7 +81,7 @@ function App() {
 
 
 
-
+      <ToastContainer />
     </>
   )
 }

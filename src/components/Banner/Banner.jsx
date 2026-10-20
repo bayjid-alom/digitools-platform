@@ -13,7 +13,7 @@ const Banner = () => {
 
                     <div className="inline-flex max-w-full mb-3 items-center gap-2 rounded-full bg-[#E1E7FF] px-4 py-2">
                         <img className="h-4 w-4 shrink-0 object-contain" src={circle} alt="" />
-                        <p className="whitespace-nowrap bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-sm font-semibold text-transparent">
+                        <p className="whitespace-nowrap bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-sm font-semibold text-transparent">
                             New: AI-Powered Tools Available
                         </p>
                     </div>
@@ -26,7 +26,7 @@ const Banner = () => {
                     </p>
 
                     <div className="buttons mt-8 flex items-center gap-2">
-                        <button className="w-fit whitespace-nowrap rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:from-[#3D28D8] hover:to-[#7E0EDB] active:scale-95">
+                        <button className="w-fit whitespace-nowrap rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:from-[#3D28D8] hover:to-[#7E0EDB] active:scale-95">
                             Explore Products
                         </button>
 
