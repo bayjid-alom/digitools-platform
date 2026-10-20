@@ -1,7 +1,6 @@
 import React from 'react';
 import Links from './Links';
 import navCartImage from '../../assets/products/shopping-cart.png'
-import navLogo from '../../assets/products/DigiTools-logo.png'
 
 
 const navLinks = [
@@ -24,13 +23,11 @@ const Navbar = () => {
             <nav className='w-[95%] md:w-[88%] lg:w-[80%] mx-auto flex justify-between items-center'>
 
                 {/* Nav Start */}
-                <div className="w-[100px] shrink-0 md:w-[140px]">
-                    <img
-                        className="w-full object-contain"
-                        src={navLogo}
-                        alt="DigiTools logo"
-                    />
-                </div>
+
+                <h3 className="whitespace-nowrap bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-xl font-extrabold tracking-tight text-transparent sm:text-2xl lg:text-3xl">
+                    DigiTools
+                </h3>
+
 
                 {/* Navbar Center */}
                 <ul className='hidden md:flex md:gap-6 lg:gap-8 items-center'>
