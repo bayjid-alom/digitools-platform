@@ -29,7 +29,7 @@ const Navbar = () => {
                 </h3>
 
 
-                {/* Navbar Center */}
+                {/* Nav Center */}
                 <ul className='hidden md:flex md:gap-6 lg:gap-8 items-center'>
                     {
                         links
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </ul>
 
 
-                {/* Navbar end */}
+                {/* Nav end */}
                 <div className='buttons-div flex gap-4 items-center'>
                     <button className="relative rounded-full p-2.5 transition-colors duration-300 hover:bg-[#4F39F6]/10">
                         <img

@@ -26,24 +26,26 @@ const Banner = () => {
                     </p>
 
                     <div className="buttons mt-8 flex items-center gap-2">
-                        <button className="flex-1 min-w-0 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-3 py-3 text-sm font-bold text-white whitespace-nowrap transition-all duration-300 hover:from-[#3D28D8] hover:to-[#7E0EDB] active:scale-95">
+                        <button className="w-fit whitespace-nowrap rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-6 py-3 text-sm font-bold text-white transition-all duration-300 hover:from-[#3D28D8] hover:to-[#7E0EDB] active:scale-95">
                             Explore Products
                         </button>
 
-                        <button className="flex-1 min-w-0 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-[#4F39F6] px-3 py-3 text-sm font-bold text-[#4F39F6] transition-all duration-300 hover:bg-[#4F39F6] hover:text-white active:scale-95">
+                        <button className="inline-flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-full border border-[#4F39F6] px-6 py-3 text-sm font-bold text-[#4F39F6] transition-all duration-300 hover:bg-[#4F39F6] hover:text-white active:scale-95">
                             <img className="h-4 w-4 shrink-0 object-contain" src={playIcon} alt="" />
                             Watch Demo
                         </button>
                     </div>
-
-
                 </div>
 
 
-
-                <div className='banner-image  max-w-[500px] w-full'>
-                    <img className='max-w-[500px] w-[100%]' src={bannerImage} alt="banner image" />
+                <div className="banner-image w-full max-w-[500px]">
+                    <img
+                        className="h-auto w-full object-contain"
+                        src={bannerImage}
+                        alt="Banner"
+                    />
                 </div>
+                
             </div>
 
         </section>
