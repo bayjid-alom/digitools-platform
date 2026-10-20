@@ -8,9 +8,18 @@ const ProductCard = ({ product, carts, setCarts }) => {
     const [isBought, setIsBought] = useState(false);
 
     const handleBuyNow = (product) => {
+
+        const existingItem = carts.find(c => c.id === product.id)
+        if (existingItem) {
+            toast.info("This product is already in your cart!");
+            return;
+        }
+
         setIsBought(true)
         setCarts([...carts, product])
+        toast.success(`${product.name} added to your cart successfully!`);
     }
+
 
     return (
         <div className="mx-auto hover:-translate-y-2 transition-all duration-300 ease-in-out relative w-full max-w-[320px] rounded-2xl border border-gray-200 bg-white p-5 shadow-sm  hover:shadow-md">

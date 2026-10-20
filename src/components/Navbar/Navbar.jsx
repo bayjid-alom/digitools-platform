@@ -12,12 +12,12 @@ const navLinks = [
 ];
 
 
-const Navbar = () => {
+const Navbar = ({ carts }) => {
     const links = navLinks.map(route => <Links key={route.name} route={route}></Links>)
 
 
     return (
-        <header className='py-2.5 md:py-5  border-b border-gray-200'>
+        <header className='py-2.5 sticky top-0 bg-white z-50 md:py-5  border-b border-gray-200'>
 
 
             <nav className='w-[95%] md:w-[88%] lg:w-[80%] mx-auto flex justify-between items-center'>
@@ -46,9 +46,13 @@ const Navbar = () => {
                             alt="Shopping cart"
                         />
 
-                        <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-red-500 px-1 text-xs font-bold text-white shadow-sm">
-                            0
-                        </span>
+                        {/* Conditionally display cart count */}
+                        {
+                            carts.length > 0 && <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-red-500 px-1 text-xs font-bold text-white shadow-sm">
+                                {carts.length}
+                            </span>
+                        }
+
                     </button>
 
 

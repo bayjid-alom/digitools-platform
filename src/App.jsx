@@ -18,14 +18,12 @@ function App() {
   const [activeTabs, setActiveTabs] = useState("products")
 
   const [carts, setCarts] = useState([])
-  console.log(carts);
-
 
 
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <Banner></Banner>
       <UserStats></UserStats>
 
