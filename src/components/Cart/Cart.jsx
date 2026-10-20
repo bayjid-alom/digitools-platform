@@ -58,7 +58,7 @@ const Cart = ({ carts, setCarts }) => {
 
                 {/* empty message */}
                 {
-                    carts.length === 0 && <div className="empty-message shadow-sm rounded-xl px-5 py-10 text-center sm:py-12">
+                    carts.length === 0 && <div className="empty-message bg-[#FAF9FF] shadow-sm rounded-xl px-5 py-10 text-center sm:py-12">
 
                         <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-linear-to-br from-violet-50 to-purple-100">
                             <svg

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "step": "01",
+        "name": "Create Account",
+        "icon": "https://i.ibb.co.com/N6GxXFQ6/user.png",
+        "alt": "Create Account icon",
+        "description": "Sign up for free in seconds. No credit card required to get started."
+    },
+    {
+        "id": 2,
+        "step": "02",
+        "name": "Choose Products",
+        "icon": "https://i.ibb.co.com/HLvRFtVS/package.png",
+        "alt": "Choose Products icon",
+        "description": "Browse our catalog and select the tools that fit your needs."
+    },
+    {
+        "id": 3,
+        "step": "03",
+        "name": "Start Creating",
+        "icon": "https://i.ibb.co.com/bgVXgXrJ/rocket.png",
+        "alt": "Start Creating icon",
+        "description": "Download and start using your premium tools immediately."
+    }
+]

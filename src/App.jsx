@@ -7,17 +7,25 @@ import Products from './components/Products/Products'
 import { ToastContainer } from 'react-toastify'
 import Cart from './components/Cart/Cart'
 
+import axios from 'axios'
+import GetStarted from './components/GetStarted/GetStarted'
+
 
 const fetchProducts = async () => {
   const res = await fetch("/products-data.json")
   return res.json()
 }
 
+const getStartedPromise = axios.get('/get-started.json')
+
+
+
 function App() {
   const productsPromise = fetchProducts()
   const [activeTabs, setActiveTabs] = useState("products")
 
   const [carts, setCarts] = useState([])
+
 
 
 
@@ -68,10 +76,10 @@ function App() {
       </div>}
       >
         {
-          activeTabs === "products" && <Products  
-          productsPromise={productsPromise}
-          carts={carts}
-          setCarts={setCarts}
+          activeTabs === "products" && <Products
+            productsPromise={productsPromise}
+            carts={carts}
+            setCarts={setCarts}
           ></Products>
         }
 
@@ -81,6 +89,12 @@ function App() {
       </Suspense>
 
 
+
+
+
+
+
+      <GetStarted getStartedPromise={getStartedPromise}></GetStarted>
 
 
 

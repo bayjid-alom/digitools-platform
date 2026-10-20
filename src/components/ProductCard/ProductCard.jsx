@@ -60,7 +60,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
             <div className="mt-3 space-y-1.5">
 
                 {
-                    features.map(feature => <p className="flex items-center gap-1.5 text-[11px] text-gray-600">
+                    features.map((feature, index) => <p key={index} className="flex items-center gap-1.5 text-[11px] text-gray-600">
                         <Check size={14} className="shrink-0 text-green-500" />
                         {feature}
                     </p>)

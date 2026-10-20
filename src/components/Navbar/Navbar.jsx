@@ -60,7 +60,7 @@ const Navbar = ({ carts }) => {
                         Login
                     </button>
 
-                    <button className="rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 py-2.5 md:py-3 text-sm font-bold text-white transition-all duration-300 hover:from-[#3D28D8] hover:to-[#7E0EDB] active:scale-95 whitespace-nowrap">
+                    <button className="rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] px-6 py-2.5 md:py-3 text-sm font-bold text-white transition-colors duration-300 hover:from-[#3D28D8] hover:to-[#7E0EDB] active:scale-95 whitespace-nowrap">
                         Get Started
                     </button>
                 </div>
