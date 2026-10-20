@@ -1,11 +1,8 @@
-# 🎯 Digital Tools Buying Website
-
-
----
+## 🎯 Digital Tools Buying Website
 
 
 
-## 🧩 Features & Requirements
+### 🧩 Features & Requirements
 
 ### 🧭 Navbar
 - Navbar designed according to Figma  
@@ -147,12 +144,3 @@ Create 6–10 product data with:
 - GitHub Repository Link:
 - Live Site Link:
 
-
-```
-https://i.ibb.co.com/cKy0wys8/design-tool.png
-https://i.ibb.co.com/WWN3SmHg/operation.png
-https://i.ibb.co.com/JR9RzHY1/portfolio.png
-https://i.ibb.co.com/93vg9V9H/social-media.png
-https://i.ibb.co.com/N68LmGTn/writing-2327400-1.png
-https://i.ibb.co.com/WWCN7rxq/camera.png
-```
