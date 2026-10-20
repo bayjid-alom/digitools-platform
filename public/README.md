@@ -1,22 +1,9 @@
-# 🎯 A-6 Digital Tools Buying Website
+# 🎯 Digital Tools Buying Website
 
-## 📅 Deadlines
-- 60 Marks: 1st April, 2026 (11:59 PM ⏱️)  
-- 50 Marks: No Deadline for 50 marks.  
-- 30 Marks: Any time after 1st April.  
 
 ---
 
----
 
-## 🚫 Key Rules
-- Don't ask about mark distribution in the group. We don't provide it.  
-- Don't post assignment feedback after you receive it. If you face any problem or have any complaints then join a support session and discuss it.  
-- Don’t use any lorem ipsum text, rather use relevant and meaningful text content.  
-- You can change the color if you want but remember that it should not be a gobindo color.  
-- Use at least 8 git commits with meaningful messages.  
-
----
 
 ## 🧩 Features & Requirements
 
@@ -169,7 +156,3 @@ https://i.ibb.co.com/93vg9V9H/social-media.png
 https://i.ibb.co.com/N68LmGTn/writing-2327400-1.png
 https://i.ibb.co.com/WWCN7rxq/camera.png
 ```
-
-
-
- <div className="relative w-full max-w-[320px] rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">

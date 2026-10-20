@@ -22,7 +22,7 @@ const ProductCard = ({ product, carts, setCarts }) => {
 
 
     return (
-        <div className="mx-auto hover:-translate-y-2 transition-all duration-300 ease-in-out relative w-full max-w-[320px] rounded-2xl border border-gray-200 bg-white p-5 shadow-sm  hover:shadow-md">
+        <div className="mx-auto hover:-translate-y-2 transition-all duration-300 ease-in-out relative w-full max-w-[320px] rounded-2xl border border-gray-200 bg-white p-5 hover:shadow-lg">
 
             {/* Tag */}
             <span className={`absolute right-2 top-2 rounded-full

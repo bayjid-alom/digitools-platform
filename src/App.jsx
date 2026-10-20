@@ -9,6 +9,7 @@ import Cart from './components/Cart/Cart'
 
 import axios from 'axios'
 import GetStarted from './components/GetStarted/GetStarted'
+import Pricing from './components/Pricing/Pricing'
 
 
 const fetchProducts = async () => {
@@ -16,7 +17,8 @@ const fetchProducts = async () => {
   return res.json()
 }
 
-const getStartedPromise = axios.get('/get-started.json')
+const getStartedPromise = axios.get('/steps-data.json')
+const pricingPromise = axios.get('/pricing-data.json')
 
 
 
@@ -25,8 +27,6 @@ function App() {
   const [activeTabs, setActiveTabs] = useState("products")
 
   const [carts, setCarts] = useState([])
-
-
 
 
   return (
@@ -92,9 +92,8 @@ function App() {
 
 
 
-
-
       <GetStarted getStartedPromise={getStartedPromise}></GetStarted>
+      <Pricing pricingPromise={pricingPromise}></Pricing>
 
 
 
