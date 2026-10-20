@@ -13,7 +13,7 @@ const navLinks = [
 
 
 const Navbar = () => {
-    const links = navLinks.map(route => <Links key={route.id} route={route}></Links>)
+    const links = navLinks.map(route => <Links key={route.name} route={route}></Links>)
 
 
     return (

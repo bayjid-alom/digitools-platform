@@ -18,7 +18,7 @@ const Banner = () => {
                         </p>
                     </div>
 
-                    <h1 className='text-[33px] md:text-[40px] lg:text-[70px] font-extrabold mb-4'>Supercharge Your Digital Workflow</h1>
+                    <h1 className='text-[30px] md:text-[40px] lg:text-[70px] font-extrabold mb-4'>Supercharge Your Digital Workflow</h1>
 
                     <p className="mt-4  text-sm leading-7 text-[#5B6475] sm:text-base sm:leading-8">
                         Access premium AI tools, design assets, templates, and productivity
@@ -45,7 +45,7 @@ const Banner = () => {
                         alt="Banner"
                     />
                 </div>
-                
+
             </div>
 
         </section>

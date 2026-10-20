@@ -1,9 +1,18 @@
+import { Suspense } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import Navbar from './components/Navbar/Navbar'
-import UserStats from './UserStats/UserStats'
+import UserStats from './components/UserStats/UserStats'
+import Products from './components/Products/Products'
+
+
+const fetchProducts = async () => {
+  const res = await fetch("/products-data.json")
+  return res.json()
+}
 
 function App() {
+  const productsPromise = fetchProducts()
 
 
   return (
@@ -11,6 +20,47 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <UserStats></UserStats>
+
+
+      {/* Products section heading */}
+      <div className="heading-container mx-auto mt-12 mb-6 w-11/12 max-w-7xl text-center">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900">
+          Premium Digital Tools
+        </h2>
+        <p className="mx-auto mt-3 max-w-2xl text-sm md:text-base leading-6 text-gray-500">
+          Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
+        </p>
+      </div>
+
+      {/* Products section tabs */}
+      <div className="tabs-container mx-auto mb-10 flex w-11/12 max-w-[320px] items-center gap-2 rounded-full border border-gray-200 bg-white p-1.5 ">
+        <button className="flex-1 rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors">
+          Products
+        </button>
+
+        <button className="flex-1 rounded-full px-4 py-2.5 text-sm font-semibold text-gray-600 transition-colors hover:bg-gray-100">
+          Cart
+        </button>
+      </div>
+
+
+
+
+
+      <Suspense fallback={<div className='flex justify-center mx-auto text-black py-12'>
+        <span className="loading loading-dots loading-xl"></span>
+      </div>}
+      >
+        <Products productsPromise={productsPromise}></Products>
+      </Suspense>
+
+
+
+
+
+
+
+
     </>
   )
 }

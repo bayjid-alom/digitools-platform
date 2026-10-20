@@ -159,3 +159,17 @@ Create 6–10 product data with:
 ## 📤 What to submit:
 - GitHub Repository Link:
 - Live Site Link:
+
+
+```
+https://i.ibb.co.com/cKy0wys8/design-tool.png
+https://i.ibb.co.com/WWN3SmHg/operation.png
+https://i.ibb.co.com/JR9RzHY1/portfolio.png
+https://i.ibb.co.com/93vg9V9H/social-media.png
+https://i.ibb.co.com/N68LmGTn/writing-2327400-1.png
+https://i.ibb.co.com/WWCN7rxq/camera.png
+```
+
+
+
+ <div className="relative w-full max-w-[320px] rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">

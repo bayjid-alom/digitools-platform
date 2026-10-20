@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "Design Studio",
+    "description": "Create stunning graphics and professional designs with creative tools and ready-made templates.",
+    "price": 29,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ design templates",
+      "Custom graphics and layouts",
+      "Brand color customization",
+      "High-quality exports"
+    ],
+    "icon": "https://i.ibb.co.com/cKy0wys8/design-tool.png",
+    "alt": "Design Studio icon"
+  },
+  {
+    "id": 2,
+    "name": "Workflow Manager",
+    "description": "Simplify daily operations, organize tasks, and manage projects efficiently from one place.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Task and project management",
+      "Workflow automation",
+      "Team collaboration",
+      "Progress tracking"
+    ],
+    "icon": "https://i.ibb.co.com/WWN3SmHg/operation.png",
+    "alt": "Workflow Manager icon"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Builder",
+    "description": "Build an impressive online portfolio to showcase your projects, skills, and professional achievements.",
+    "price": 35,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Professional portfolio templates",
+      "Project showcase sections",
+      "Responsive layouts",
+      "Customizable profile"
+    ],
+    "icon": "https://i.ibb.co.com/JR9RzHY1/portfolio.png",
+    "alt": "Portfolio Builder icon"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Pro",
+    "description": "Create engaging social media content and manage your online presence with ease.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Social media post templates",
+      "Caption writing assistance",
+      "Content calendar",
+      "Multi-platform content planning"
+    ],
+    "icon": "https://i.ibb.co.com/93vg9V9H/social-media.png",
+    "alt": "Social Media Pro icon"
+  },
+  {
+    "id": 5,
+    "name": "AI Writing Assistant",
+    "description": "Write compelling blogs, emails, product descriptions, and marketing copy with AI-powered assistance.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "AI-powered content generation",
+      "Blog and email templates",
+      "Grammar improvement",
+      "Tone customization"
+    ],
+    "icon": "https://i.ibb.co.com/N68LmGTn/writing-2327400-1.png",
+    "alt": "AI Writing Assistant icon"
+  },
+  {
+    "id": 6,
+    "name": "Photo Studio",
+    "description": "Enhance your photography with powerful editing tools, creative effects, and professional image adjustments.",
+    "price": 24,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Professional photo editing",
+      "Color and lighting adjustments",
+      "Creative filters and effects",
+      "High-resolution exports"
+    ],
+    "icon": "https://i.ibb.co.com/WWCN7rxq/camera.png",
+    "alt": "Photo Studio icon"
+  }
+]
