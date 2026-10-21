@@ -10,7 +10,7 @@ const CartCard = ({ item, carts, setCarts }) => {
     }
 
     return (
-        <div className='cart-card bg-[#F9FAFC] rounded-xl p-3 py-3 md:py-0 md:p-5 flex justify-between items-center mx-auto w-full'>
+        <div className='cart-card bg-[#F9FAFC] rounded-xl p-3 py-3 md:py-6 md:p-5 flex justify-between items-center mx-auto w-full'>
 
             <div className='left-side flex items-center gap-4'>
 
