@@ -11,6 +11,7 @@ import axios from 'axios'
 import GetStarted from './components/GetStarted/GetStarted'
 import Pricing from './components/Pricing/Pricing'
 import Transform from './components/Transform/Transform'
+import Footer from './components/Footer/Footer'
 
 
 const fetchProducts = async () => {
@@ -33,7 +34,9 @@ function App() {
   return (
     <>
       <Navbar carts={carts}></Navbar>
+
       <Banner></Banner>
+
       <UserStats></UserStats>
 
 
@@ -94,11 +97,12 @@ function App() {
 
 
       <GetStarted getStartedPromise={getStartedPromise}></GetStarted>
+
       <Pricing pricingPromise={pricingPromise}></Pricing>
+
       <Transform></Transform>
 
-
-
+      <Footer></Footer>
 
 
       <ToastContainer />
