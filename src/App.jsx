@@ -10,6 +10,7 @@ import Cart from './components/Cart/Cart'
 import axios from 'axios'
 import GetStarted from './components/GetStarted/GetStarted'
 import Pricing from './components/Pricing/Pricing'
+import Transform from './components/Transform/Transform'
 
 
 const fetchProducts = async () => {
@@ -94,6 +95,7 @@ function App() {
 
       <GetStarted getStartedPromise={getStartedPromise}></GetStarted>
       <Pricing pricingPromise={pricingPromise}></Pricing>
+      <Transform></Transform>
 
 
 
